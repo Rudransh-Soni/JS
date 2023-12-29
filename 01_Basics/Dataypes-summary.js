@@ -23,7 +23,7 @@ console.log(id === anotherId);
 
 const BGMI = ["Pochinki", "Goregopal", "kameski"];
 
-let myObj = {
+let myObj = {           // Object will be in KEY PAIR value.                      
     name: "Rudransh",
     age: 22,
 }
