@@ -34,7 +34,7 @@ const hundreds = 10000
 // console.log(Math.max(4,6,8,2,9,3,1));
 
 console.log(Math.random());     // Using RANDOM function the value will always comes between 0 and 1.
-console.log(Math.random()*10 + 1);     
+console.log(Math.random()*10 + 1);    // With the help of "*10 + 1" we are assuring that the value is more than 1 or equal to 1
 console.log(Math.floor(Math.random()*10) + 1);   // Using this method we can sure that the value will be between 0 and 1. It can not be 0
 
 
