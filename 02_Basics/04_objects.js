@@ -56,3 +56,16 @@ console.log(Object.entries(yt));
 
 console.log(yt.hasOwnProperty('isLoggedIn'));
 console.log(yt.hasOwnProperty('isLoggedOut'));
+
+//   Object de-structure
+//  de-structure means you are changing you original variable name, object name into easy form so that it can be easily understandable.
+//  The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+const course ={
+    name: "JAvaScript",
+    price: "999",
+    courseTeacher: "Rudransh Soni"
+}
+
+const {courseTeacher:Instructor} = course // here we de-structure the object.
+console.log(Instructor);
