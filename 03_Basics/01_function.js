@@ -30,5 +30,39 @@ function userLogIn(Username = "Soni"){           // here we created a function f
     }
     return `${Username} just logged In` // here we used String interpollation for passing a message.
 }
-console.log(userLogIn("Rudransh"))      // and for printing its value we use "console.log". // if we are not defining any values in it then it will print "Undefined"  
+// console.log(userLogIn())      // and for printing its value we use "console.log". // if we are not defining any values in it then it will print "Undefined"  
 
+
+function calculateCartPrice(...num1){   // Spread Operator is also known as "Rest" operator. Using this we can print every value and the value will be stored in Array.
+    return num1
+}
+// console.log(calculateCartPrice(500, 400, 450, 550));
+
+
+        // How to Use Object in Function.
+const user = {              // First create one object.
+    name: "rudransh",
+    age: 22 
+}
+
+function handleObject(anyuser){        // create one function and  using string interpollation cal the object entites which you want to use.
+    console.log(`Username is ${anyuser.name}, and the Age is ${anyuser.age}`);
+}
+handleObject(user)
+
+handleObject({          // This is also an another way to print the object in function.
+    name: "Soni",
+    Age: 22
+})
+    
+
+        // How to Use Arrays in Function.
+
+const newArray = [200, 300, 400, 500]       // create new array.
+
+function handleArray(getArray){             // create function and paas one parameter so that it can take values from Array.
+    return getArray[2]
+}
+
+console.log(handleArray(newArray));
+// console.log(handleArray([200, 300, 400, 500]));
