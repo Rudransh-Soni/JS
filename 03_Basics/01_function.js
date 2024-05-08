@@ -1,7 +1,7 @@
 // when we are creating any function then we have to call it.
 // example:- function one(){
 
-// }
+//}
 //one()         // this is called calling a function.
 
 
