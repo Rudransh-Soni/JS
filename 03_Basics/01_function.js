@@ -1,3 +1,10 @@
+// when we are creating any function then we have to call it.
+// example:- function one(){
+
+//}
+//one()         // this is called calling a function.
+
+
 function Myname(){         // this is the syntax of function.
     // console.log("S");
     // console.log("O");
