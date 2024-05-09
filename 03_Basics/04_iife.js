@@ -8,7 +8,7 @@
 })();               // we have to end this IIFE function using ';' semicolon.
 
 
-( (name) => {                       // here we passed one parameter with 'name'.
+( (name) => {                       // here we passed one parameter with 'name'. and we used arrow function also.
     console.log(`name is ${name}`);
 } )
 ("Rudrash")
