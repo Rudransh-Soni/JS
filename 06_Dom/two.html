@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Learning</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!---  this is a comment --->           
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const Parent = document.querySelector('.parent')
+    // console.log(Parent);
+    // console.log(Parent.children);                    // here we access all the childrens of 'Parent Class'
+    // console.log(Parent.children[1].innerHTML);      // here we access 1 children and the inner text of that children also
+
+    // for (let i = 0; i < Parent.children.length; i++) {  // using this we can access the 'lenght of childrens' inside 'Parent'
+    //     console.log(Parent.children[i].innerHTML);
+    // }
+
+    Parent.children[1].style.color = "orange"
+    // console.log(Parent.firstElementChild);       // here we access firs Child
+    // console.log(Parent.lastElementChild);       // here we access last element.
+
+    const DayOne = document.querySelector('.day')
+    // console.log(DayOne);
+    // console.log(DayOne.parentElement);          // here we access 'Parent' from 'Child'
+    // console.log(DayOne.nextElementSibling);    // here we access 'Next sibling of Child'.
+
+    console.log("NODES: ", Parent.childNodes);      // here we check that how many Node lists are ther in parent DIV.  [O/P = 11]
+</script>
+</html>
