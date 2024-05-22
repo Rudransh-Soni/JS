@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudransh Soni DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+    <script>  // here we are adding one more <li> item using DOM. and using 'Function()'.
+    function Addlanguage(langName) {                           // we create a <li> item using Function. Here we declare a function
+        const li = document.createElement("li")               // using '.createElement()' we created one element. 
+        li.innerHTML = `${langName}`                         // here we add some text into out <list> item.
+        document.querySelector(".language").appendChild(li) // using .querySelector(".language") we give path to where we have to add this list item and with .appendChild(li) we tells him to add "li".    }
+    }
+    Addlanguage("Ruby")                                    // here we return our funtion with value. 
+    
+
+    // Optimize Way.
+    function OptWayAddLang(langName) {                           // this is the optimize way to add an Element in DOM
+        const li = document.createElement("li")                 // using '.createElement()' we created one e       
+        li.appendChild(document.createTextNode(langName))      // here we created one TextNode using .createtextNode() and directly appned it to 'li' using li.appendChild
+        document.querySelector(".language").appendChild(li)    // using .querySelector(".language") we give path to where we have to add this list item. Here we don't have refrence that's why we used .querySelector
+    }
+    OptWayAddLang("Python")
+
+
+    // Edit    We are changing the values of our <li> items.
+        const Editlang = document.querySelector("li:nth-child(2)")      // here we are selecting to which <li> item we have to Edit or chng.
+        const newli = document.createElement("li")                     // using '.createElement()' we created one element. 
+        newli.textContent = "ReactJs"                                 // here we will add new content or element.
+        Editlang.replaceWith(newli)                                  // here we relace the old element to new one using .replaceWith().   
+
+
+    // Edit     Second method
+        const firstLang = document.querySelector("li:first-child")
+        firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+    // Removing an element.
+        const RmEle = document.querySelector("li:last-child")
+        RmEle.remove()                          // using this method last list item will be removed.
+    </script>
+</html>
